@@ -132,7 +132,7 @@ feature lies within the training min/max. Elsewhere the plain SST velocity is ke
 every other test case unchanged and recovers most of the hump's accuracy for both models. The
 neural network gains the most, going from 0.0661 to **0.0595** overall. The
 cutoff was fixed *before* looking at the test scores. Tuning it on the test set would amount to
-training on test data, and the validation set contains no new geometry to tune it on.
+training on test data, and the validation set contains no new geometry to tune it on. The fallback was motivated by the hump result itself, so its benefit on that case should be treated as optimistic.
 
 ## 5. Reproduce (Windows / macOS / Linux)
 
